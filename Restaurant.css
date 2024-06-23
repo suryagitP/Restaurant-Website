@@ -1,0 +1,726 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Global Styles */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.408);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  color: black;
+  gap: 2rem;
+  right: 0;
+  padding-right: 15px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, 0.077);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Heading Logo Styles */
+.heading-logo {
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 2rem;
+  color: black;
+}
+
+.heading-logo span {
+  color: red;
+  font-size: 2.5rem;
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+  display: none; /* Hidden by default */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Home Section Styles */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 10vw;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30vh;
+}
+
+.h1-class {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.p1-class {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resebtn {
+  border: none;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: rgba(255, 0, 0, 0.44);
+  color: #fff;
+  cursor: pointer;
+  width: 250px;
+  font-size: 1.5rem;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.485)),
+    url(./img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Popup Form Styles */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.148);
+  z-index: 999;
+}
+
+.form-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #07030368;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.899);
+  width: 300px;
+  color: white;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"],
+.form-container input[type="date"],
+.form-container input[type="time"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: firebrick;
+  color: #ddd;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.form-container button:hover {
+  background-color: #2e2e2e;
+  color: firebrick;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid firebrick;
+}
+
+/* Menu Section Styles */
+#menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.181));
+}
+
+.head > h1 {
+  padding-top: 10%;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.head > h1 span {
+  color: red;
+  font-size: 3rem;
+}
+
+.menu-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: 60px;
+}
+
+.card > div {
+  box-shadow: 10 15px 20px 0 rgba(0, 0, 0, 0.7);
+}
+
+.card-image {
+  width: 400px;
+  height: 250px;
+}
+
+.card-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.card-text {
+  margin: -30px auto;
+  height: 280px;
+  width: 300px;
+  background: #1d1c20;
+  color: #fff;
+  padding: 20px;
+}
+
+.meal-type {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.menu-body {
+  font-size: 1.25rem;
+}
+
+/* About Section Styles */
+.about {
+  color: white;
+  width: 100%;
+  padding: 78px 0px;
+  background: rgba(0, 0, 0, 0.796);
+  padding-top: 10%;
+}
+
+.about img {
+  height: auto;
+  width: 420px;
+}
+
+.about-description {
+  width: 550px;
+}
+
+.about-container {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 5px solid #c80e0e;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.about-description h1 {
+  position: relative;
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-description h1::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: firebrick;
+  top: 120%;
+  left: 0;
+}
+
+.about-description h1 span {
+  color: red;
+}
+
+.about-description p {
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+/* Animation */
+@keyframes pulseBorder {
+  0% {
+    border-color: #bd4545;
+  }
+  50% {
+    border-color: #ff8000a9;
+  }
+  100% {
+    border-color: #853902;
+  }
+}
+
+.about-container {
+  animation: pulseBorder 4s infinite;
+}
+
+/* Contact Section Styles */
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    margin-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    min-width: auto;
+    flex-basis: auto;
+  }
+
+  .right {
+    flex-basis: auto;
+  }
+
+  .icon-Group {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .icon-Group .icon {
+    margin-right: 10px;
+  }
+
+  .message-Form .input-Group {
+    margin: 12px 0;
+  }
+
+  .message-Form .input-Group.halfWidth {
+    flex-basis: 100%;
+  }
+}
+
+/* General styling (unchanged from your original CSS) */
+#contact {
+  width: 100%;
+  height: 100%;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 8%;
+  padding-top: 10%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+  min-width: 320px;
+  margin-right: 60px;
+}
+
+.right {
+  flex-basis: 60%;
+}
+
+.contact-title {
+  padding-bottom: 20px;
+}
+
+.contact-title h2 {
+  position: relative;
+  font-size: 28px;
+  color: #ddd;
+  display: inline-block;
+}
+
+.contact-title h2::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: firebrick;
+  top: 120%;
+  left: 0;
+}
+
+.contact-info {
+  margin-bottom: 16px;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+  padding-top: 30px;
+}
+
+.icon-Group .icon {
+  width: 45px;
+  height: 45px;
+  border: 2px solid firebrick;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.icon-Group .icon i {
+  font-size: 20px;
+  color: #ddd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-Group .details {
+  position: relative;
+  top: -35px;
+}
+
+.icon-Group .details span {
+  padding-left: 60px;
+}
+
+.message-Form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.input-Group {
+  margin: 18px 0px;
+  position: relative;
+}
+
+.halfWidth {
+  flex-basis: 48%;
+}
+
+.fullWidth {
+  flex-basis: 100%;
+}
+
+.message-Form input,
+.message-Form textarea {
+  width: 100%;
+  font-size: 18px;
+  padding: 2px 0px;
+  background-color: #2e2e2e;
+  color: #ddd;
+  border: none;
+  border-bottom: 2px solid #666;
+  outline: none;
+}
+
+.message-Form textarea {
+  resize: none;
+  height: 220px;
+  display: block;
+}
+
+.input-Group label {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  color: #888;
+  font-size: 18px;
+  transition: 0.4s;
+  pointer-events: none;
+}
+
+.input-Group:nth-child(4) label {
+  top: 2px;
+}
+
+.input-Group input:focus ~ label,
+.input-Group textarea:focus ~ label,
+.input-Group input:valid ~ label,
+.input-Group textarea:valid ~ label {
+  transform: translateY(-30px);
+  font-size: 16px;
+}
+
+.input-Group button {
+  padding: 8px 16px;
+  font-size: 18px;
+  background-color: firebrick;
+  color: #ddd;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.input-Group button:hover {
+  background-color: #2e2e2e;
+  color: firebrick;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid firebrick;
+}
+
+#footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer {
+  position: relative;
+  width: 100%;
+  background: black;
+  min-height: 100px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .social-icons,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .social-icons li,
+footer .menu li {
+  list-style: none;
+}
+footer .social-icons li a {
+  font-size: 2rem;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .social-icons li a:hover {
+  transform: translateY(-10px);
+}
+footer .menu li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  opacity: 0.85;
+}
+footer .menu li a:hover {
+  transform: translateY(-10px);
+  opacity: 7;
+}
+footer p {
+  color: white;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .heading-logo {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .heading-logo span {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+  a span {
+    font-size: 1.4rem;
+  }
+
+  #home {
+    padding: 5vw;
+    padding-top: 20vh;
+  }
+
+  .h1-class {
+    padding-top: 10%;
+    padding-bottom: 50px;
+    font-size: 24px;
+  }
+
+  .p1-class {
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .resebtn {
+    padding: 15px;
+    width: 200px;
+    font-size: 1.2rem;
+  }
+
+  header {
+    height: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.485)),
+      url(./img/bg2-phone.jpg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu-icon {
+    display: block; /* Show the menu icon on small screens */
+  }
+
+  #menu-links {
+    display: none; /* Hide the menu links by default */
+    flex-direction: column; /* Stack the links vertically */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the text */
+  }
+
+  #menu-links.active {
+    display: flex; /* Show the menu when active */
+  }
+}
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  #home {
+    padding: 100px 20px;
+  }
+
+  .h1-class {
+    font-size: 24px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .p1-class {
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .resebtn {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+}
+
+@media (min-width: 1130px) {
+  .about-container {
+    width: 1130px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .about-container {
+    width: 95%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about img {
+    width: 100%;
+  }
+
+  .about-description {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+@media (max-width: 1100px) {
+  .messageForm .halfWidth {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .container .row {
+    flex-wrap: wrap;
+  }
+  .row section.left,
+  .row section.right {
+    flex-basis: 100%;
+    margin: 0px;
+  }
+}

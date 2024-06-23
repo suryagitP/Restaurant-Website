@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title section-->
+    <title>Scorch & Sizzle</title>
+    <!--Favicon-->
+    <link rel="icon" href="/img/favicon.png" />
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="Restaurant.css" />
+    <!--IconSheet-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!--Header section-->
+    <header>
+      <!-- Navigation section -->
+      <nav id="navbar">
+        <!-- Logo -->
+        <div class="heading-logo">
+          <span>S</span>corch & <span>S</span>izzle
+        </div>
+        <!-- Menu icon for mobile view -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <!-- Menu links -->
+        <ul id="menu-links">
+          <li>
+            <a href="#home"><span>H</span>ome</a>
+          </li>
+          <li>
+            <a href="#menu"><span>M</span>enu</a>
+          </li>
+          <li>
+            <a href="#about"><span>A</span>bout</a>
+          </li>
+          <li>
+            <a href="#contact"><span>C</span>ontact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Home section -->
+      <section id="home">
+        <!-- Main heading -->
+        <h1 class="h1-class">Welcome to Scorch & Sizzle</h1>
+        <!-- Description -->
+        <p class="p1-class">
+          Nestled in the heart of the United States, our restaurant invites you
+          on a gastronomic journey like no other. With a passion for flavors
+          that ignite the senses and a commitment to sourcing the finest
+          ingredients.
+        </p>
+        <!-- Button to reserve a table -->
+        <button
+          type="button"
+          onclick="document.getElementById('reservation-form').style.display='block'"
+          class="resebtn"
+        >
+          Reserve a Table
+        </button>
+      </section>
+    </header>
+    <!--Menu section-->
+    <section id="menu">
+      <div class="head">
+        <!-- Heading with span for styling -->
+        <h1><span>M</span>enu</h1>
+        <!-- Container for menu items -->
+        <div class="menu-container">
+          <!-- Individual menu item card -->
+          <div class="card">
+            <!-- Image for the menu item -->
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1630230596637-28f416b537ff?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <!-- Text content for the menu item -->
+            <div class="card-text">
+              <!-- Type of meal (e.g., starters) -->
+              <p class="meal-type">Starters</p>
+              <p class="menu-body">Bruschetta</p>
+              <p class="menu-body">Cron Cheese balls</p>
+              <p class="menu-body">Antipasto bites</p>
+              <p class="menu-body">Hummus</p>
+              <p class="menu-body">Methi pakora</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3BhZ2hldHRpJTIwY2FyYm9uYXJhfGVufDB8fDB8fHww"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <p class="meal-type">Main Courses</p>
+              <p class="menu-body">Spaghetti Carbonara</p>
+              <p class="menu-body">Chicken Bhuna</p>
+              <p class="menu-body">Butter Chicken</p>
+              <p class="menu-body">Mac and Cheese</p>
+              <p class="menu-body">Barbecue Chicken</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1639330842151-8a92eb332b2d?q=80&w=2094&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <p class="meal-type">Desserts</p>
+              <p class="menu-body">Apple Pie</p>
+              <p class="menu-body">Banana Pudding</p>
+              <p class="menu-body">Cheese Cake</p>
+              <p class="menu-body">Chocolate Cake</p>
+              <p class="menu-body">Chocolate Mousse</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://www.southernliving.com/thmb/hgr9aBDtj3LYj7o93loAWJOVzfk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Vodka_Cranberries_008-f57e105ee00a4df9a42b09a777f5ca53.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <p class="meal-type">Juices</p>
+              <p class="menu-body">Apple</p>
+              <p class="menu-body">Beet</p>
+              <p class="menu-body">Blueberry</p>
+              <p class="menu-body">Cranberry</p>
+              <p class="menu-body">Orange</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://3.imimg.com/data3/CP/EQ/MY-8715647/hot-beverages-1000x1000.png"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <p class="meal-type">Hot Beverage</p>
+              <p class="menu-body">Coffee</p>
+              <p class="menu-body">Tea</p>
+              <p class="menu-body">Hot Chocolate</p>
+              <p class="menu-body">Hot Lemon</p>
+              <p class="menu-body">Fresh Ginger Tea</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://assets-global.website-files.com/5e9ebc3fff165933f19fbdbe/61b31c9d289e22335b6753b2_Ice%20Cream%202-p-1080.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="card-text">
+              <p class="meal-type">Ice Cream</p>
+              <p class="menu-body">Strawberry</p>
+              <p class="menu-body">Chocolate</p>
+              <p class="menu-body">Butter pecan</p>
+              <p class="menu-body">Mint Chocolate chips</p>
+              <p class="menu-body">Pistachio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about">
+        <!-- Container for the about section content -->
+        <div class="about-container">
+          <!-- Image illustrating the about section -->
+          <img
+            src="https://images.unsplash.com/photo-1512442768687-8073560351ab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="about"
+          />
+          <!-- Description of the about section -->
+          <div class="about-description">
+            <!-- Main heading with span for styling -->
+            <h1><span>A</span>bout <span>U</span>s</h1>
+            <!-- Paragraph describing the restaurant's mission and values -->
+            <p>
+              As our culinary journey continues to unfold, we remain steadfast
+              in our dedication to providing not just a meal, but an experience
+              that ignites the senses and fosters moments of joy and connection.
+              Each dish is a testament to our passion for innovation and
+              quality, meticulously prepared to delight the palate and leave a
+              lasting impression.
+            </p>
+            <!-- Additional paragraph highlighting the restaurant's approach to cuisine -->
+            <p>
+              In our pursuit of culinary perfection, we embrace diversity and
+              draw inspiration from global cuisines, infusing traditional
+              recipes with modern flair. Our chefs, driven by creativity and a
+              relentless pursuit of perfection, continuously push the boundaries
+              of flavor, texture, and presentation, ensuring that every bite is
+              a revelation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="row">
+          <!-- Left Section for Contact Information -->
+          <section class="left">
+            <div class="contact-title">
+              <h2>Contact us at</h2>
+            </div>
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <!-- Phone Icon and Number -->
+              <div class="icon-Group">
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="details">
+                  <span>Phone: +00 110 111 00</span>
+                </div>
+              </div>
+              <!-- Email Icon and Address -->
+              <div class="icon-Group">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="details">
+                  <span>Email: S&Scontact@.com</span>
+                </div>
+              </div>
+              <!-- Location Icon and Address -->
+              <div class="icon-Group">
+                <div class="icon">
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="details">
+                  <span>Location: X Street, US</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Right Section for Contact Form -->
+          <section class="right">
+            <form class="message-Form">
+              <!-- Input Fields for Name, Email, and Mobile Number -->
+              <div class="input-Group halfWidth">
+                <input type="text" name="" required="required" />
+                <label>Your Name</label>
+              </div>
+              <div class="input-Group halfWidth">
+                <input type="email" name="" required="required" />
+                <label>Email</label>
+              </div>
+              <div class="input-Group fullWidth">
+                <input type="tel" name="" required="required" />
+                <label>Your Mobile Number</label>
+              </div>
+              <!-- Textarea for Message -->
+              <div class="input-Group fullWidth">
+                <textarea required="required"></textarea>
+                <label>Type Your Message</label>
+              </div>
+              <!-- Submit Button -->
+              <div class="input-Group fullWidth">
+                <button>Send Message</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+      <footer>
+        <ul class="social-icons">
+          <li>
+            <a href="#instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+          </li>
+          <li>
+            <a href="#youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+          </li>
+        </ul>
+        <!-- Menu Links -->
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <!-- Copyright -->
+        <p>&copy; 2024 Scorch & Sizzle</p>
+      </footer>
+    </section>
+
+    <!-- JavaScript for Menu Toggle and Reservation Form -->
+    <script>
+      function toggleMenu() {
+        var menuLinks = document.getElementById("menu-links");
+        if (menuLinks.classList.contains("active")) {
+          menuLinks.classList.remove("active");
+        } else {
+          menuLinks.classList.add("active");
+        }
+      }
+    </script>
+
+    <!-- Reservation Form Popup -->
+    <div id="reservation-form" class="form-popup">
+      <form class="form-container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required />
+        <!-- Submit and Cancel Buttons -->
+        <button type="submit" class="btn">Submit</button>
+        <button
+          type="button"
+          class="btn cancel"
+          onclick="document.getElementById('reservation-form').style.display='none'"
+        >
+          Close
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
